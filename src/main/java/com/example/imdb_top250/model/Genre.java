@@ -11,7 +11,7 @@ public class Genre {
     private Long id;
     private String name;
 
-    @ManyToMany(mappedBy = "genres")
+    @OneToMany(mappedBy = "genres")
     private Set<Movie> movies;
 
     //Getters and Setters
