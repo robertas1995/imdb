@@ -34,7 +34,12 @@ cd imdb
 
 ### 2. Configure MySQL Database
   - Create a new database in MySQL(e.g.,'imdb').
-  -Update the 'src/main/resources/application.properties' with your MySQL databse
+  - Update the 'src/main/resources/application.properties' with your MySQL databse
+    spring.datasource.url=jdbc:mysql://localhost:3306/imdb
+    spring.datasource.username=your_username
+    spring.datasource.password=your_password
+    spring.jpa.hibernate.ddl-auto=update
+
 ### 3. Build and Run the Application
   - Build the project using Maven: mvn clean install
   - Run the Spring Boot application: mvn spring-boot:run 🏃
